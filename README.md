@@ -1,5 +1,8 @@
 # thinkgisdump
 
+[![Build status](https://github.com/pjsier/thinkgisdump/workflows/CI/badge.svg)](https://github.com/pjsier/thinkgisdump/actions)
+![pypi](https://img.shields.io/pypi/v/thinkgisdump)
+
 Command line tool for scraping GeoJSON from [ThinkGIS](https://www.wthgis.com/) sites. Based on [pyesridump](https://github.com/openaddresses/pyesridump).
 
 ## Install
