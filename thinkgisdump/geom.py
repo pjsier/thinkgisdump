@@ -74,4 +74,6 @@ def parse_geometry(geom_strs):
     if len(coord_lists) == 1:
         return rewind({"type": "Polygon", "coordinates": coord_lists})
     else:
-        return rewind({"type": "MultiPolygon", "coordinates": [coord_lists]})
+        return rewind(
+            {"type": "MultiPolygon", "coordinates": [[cl] for cl in coord_lists]}
+        )
