@@ -18,7 +18,7 @@ This will add the script `thinkgis2geojson` to your path.
 ## Usage
 
 ```shell
-usage: thinkgis2geojson [-h] [-l LAYER_ID] [-o OUTPUT] url
+usage: thinkgis2geojson [-h] [-l LAYER_ID] [-o OUTPUT] [-q QUIET] url
 
 Scrape GeoJSON from ThinkGIS sites
 
@@ -31,6 +31,8 @@ optional arguments:
                         Layer ID (in the dsid query param) to be scraped
   -o OUTPUT, --output OUTPUT
                         Output file name, defaults to stdout
+  -q QUIET, --quiet QUIET
+                        Suppress logging of feature requests
 ```
 
 Because of the defaults and setting the layer ID based on query params, the following two command are equivalent.

@@ -82,6 +82,13 @@ def parse_args(args):
         default=sys.stdout,
         help="Output file name, defaults to stdout",
     )
+    parser.add_argument(
+        "-q",
+        "--quiet",
+        default=False,
+        action="store_true",
+        help="Suppress logging of feature requests",
+    )
     return parser.parse_args(args)
 
 
@@ -108,7 +115,8 @@ def main():
         if idx == len(feature_ids) - 1:
             sep = "\n"
         args.output.write(f"{json.dumps(feature)}{sep}")
-        print(f"Parsed feature {feat_id}", file=sys.stderr)
+        if not args.quiet:
+            print(f"Parsed feature {feat_id}", file=sys.stderr)
 
     args.output.write("]}")
 
