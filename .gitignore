@@ -49,10 +49,6 @@ coverage.xml
 *.cover
 .hypothesis/
 
-# Scrapy stuff:
-.scrapy
-tutorial/
-
 # pyenv
 .python-version
 
@@ -73,9 +69,6 @@ tutorial/
 .venv
 venv/
 ENV/
-
-# legistar cache
-_cache/
 
 # OS files
 .DS_Store
